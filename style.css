@@ -1,0 +1,28 @@
+ #countlabel {
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+                 'Lucida Grande', 'Lucida Sans Unicode',
+                 Geneva, Verdana, sans-serif;
+}
+
+#btncontainer {
+    text-align: center;
+}
+
+.buttons {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    background-color: rgb(78, 199, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.buttons:hover {
+    background-color: aqua;
+    transition-delay: 0.5s;
+}
+

@@ -1,0 +1,255 @@
+//to print something
+
+console.log('hello');
+console.log('I like pizza');
+
+//set an alert
+
+window.alert('This is an alert');
+window.alert("i like pizza");
+
+
+//edit text in js 
+document.getElementById("header1").textContent = 'hello';
+document.getElementById("para1").textContent = 'Ilike pisszaaa';
+
+//variables in JS 
+
+let age = 23;
+let price = 10.99;
+let gpa = 10.9;
+// Numbers
+let firstname = "Abhinav"
+let favfood = "pizza"
+//string of characters
+
+console.log(price);
+console.log(gpa);
+console.log(age);
+console.log(firstname);
+console.log(favfood);
+
+console.log(typeof firstname)
+console.log(`You are ${age} years old`);
+console.log(`the price of sanity is ${price}`);
+console.log(`Your gpa is ${gpa}`);
+console.log(`your name is ${firstname}`)
+
+//boolean 
+
+let online = false;
+console.log(typeof online);
+console.log(`bro is online ${online}`)
+
+
+let forsale = false;
+console.log(`is this car for sale? ${forsale}`)
+
+
+//variable - a container that stores a value and behaves like if it were the value it contains 
+
+let fullName = "Abhinav Singh";
+let age = 20;
+let isstudent = true;
+
+
+document.getElementById("p1").textContent = `your name is ${fullName}`;
+document.getElementById("p2").textContent = `Your age is ${age}`;
+document.getElementById("p3").textContent = `Are you a student : ${isstudent}`;
+
+
+//arthmetic operators = operands (values / variables etc )
+// operators ( + - * /)    
+
+let student = 30;
+
+student = student + 1;
+student = student - 1;
+student = student * 5
+student = student / 6;
+student = student ** 2;
+let extraStudents = student % 2;
+
+student += 1;
+student -= 2;
+student *= 2;
+student /= 2;
+student **= 2;
+student %= 2;
+student++;
+console.log(student)
+
+
+Operator precedence - phele kon sa kaam hoga
+1. parenthesis
+2. exponents = **
+    3. multuplication & division & modulo */%
+4. addition & substraction + -
+
+
+
+    let result = 1 + 2 * 3 + 4 ** 2;
+
+console.log(result)
+
+
+//how to take user input
+
+// 1 easy way - window prompt
+// 2 professional way - html text box
+
+
+// wwindow prompt
+
+let username;
+username = window.prompt("Whar is Your username");
+console.log(username);
+
+//professional way - html textbox
+let username;
+document.getElementById("Mysumbit").onclick = function () {
+    username = document.getElementById("text").value;
+    document.getElementById("myh1").textContent = `Hello ${username}`
+}
+
+
+//type convrsion  = change the datatype of a value to another like
+//string , numbers, booleans;
+
+// let age = window.prompt("how old are you ?");
+// age = Number(age); //makes it a number
+// age +-1;
+// console.log(age, typeof age);
+
+let x = "0";
+let y = "0";
+let z = "0";
+
+x = Number(x);
+y = String(y);
+z = Boolean(z);
+
+console.log(x, typeof x);
+console.log(y, typeof y);
+console.log(z, typeof z);
+
+
+//const = a variable that cant be changed
+
+
+//Circumference of a circle
+const PI = 3.14159;
+let radius;
+let circumference;
+
+document.getElementById("Mysumbit").onclick = function () {
+    radius = document.getElementById("text").value;
+    radius = Number(radius);
+    circumference = 2 * PI * radius;
+    document.getElementById("myh3").textContent = circumference + "cm";
+}
+
+
+
+//COUNTER PROGRAM
+
+
+//JAVA SCRIPT
+const Decrease = document.getElementById("Decrease");
+const Reset = document.getElementById("Reset");
+const Increase = document.getElementById("Increase");
+const countlabel = document.getElementById("countlabel");
+
+let count = 0;
+
+Increase.onclick = function () {
+    count++;
+    countlabel.textContent = count;
+}
+
+Decrease.onclick = function () {
+    count--;
+    countlabel.textContent = count;
+}
+
+Reset.onclick = function () {
+    count = 0;
+    countlabel.textContent = count;
+}
+
+//CSS
+
+#countlabel{
+    display: block;
+    text - align: center;
+    font - size: 10em;
+    font - family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans - serif;
+}
+#btncontainer{
+    text - align: center;
+
+}
+.buttons{
+    padding: 10px 20px;
+    font - size: 1.5em;
+    color: rgb(255, 255, 255);
+    background - color: rgb(78, 199, 255);
+    border - radius: 10px;
+    cursor: pointer;
+    transition: background - color 0.25s;
+}
+
+.buttons:hover{
+
+    background - color: aqua;
+    animation - delay: .5s;
+}
+
+//HTML
+
+
+//     <label id="countlabel">0</label><br>
+//     <div id="btncontainer">
+
+//         <button id="Decrease" class="buttons">Decrease</button>
+//         <button id="Increase" class="buttons">Increase</button>
+//         <button id="Reset" class="buttons">Reset</button>
+
+//     </div>
+
+
+
+//MATHS = BUILT IN OBJECTS THAT PROVIDES A COLLECTION OF PROPERTIES AND METHODS
+
+//console.log(Math.PI)
+
+let x = 45;
+let y = 2;
+let z;
+
+z = Math.round(x);
+z = Math.floor(x); // Rounds Down
+z = Math.ceil(x);   //Round up
+z = Math.trunc(x);    //removes decimal
+z = Math.pow(y, x);
+z = Math.sqrt(x);
+z = Math.sin(x);
+z = Math.cos(x);
+z = Math.tan(x);
+z = Math.abs(x);
+z = Math.sign(x);
+
+let max = Math.max(x, y, z);
+let min = Math.min(x, y, z);
+
+console.log(min)
+
+
+//RANDOM NUMBER GENERATOR
+
+
+const min = 50;
+const max = 100;
+let randomnum = Math.floor(Math.random() *(max - min)) + min ;
+
+console.log(randomnum); 
