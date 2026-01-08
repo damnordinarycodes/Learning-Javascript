@@ -1,5 +1,12 @@
-//Random Number Generator
+const myButton = document.getElementById("myButton");
+const myLabel = document.getElementById("myLabel");
 
-let randomNum = Math.floor(Math.random() * 6) + 1;
+const min = 1;
+const max = 6;
 
-console.log(randomNum);
+let randomNum;
+
+myButton.onclick = function(){
+    randomNum = Math.floor(Math.random() * max ) + min ;
+    myLabel.textContent = randomNum;
+}
