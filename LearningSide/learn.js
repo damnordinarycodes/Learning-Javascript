@@ -54,6 +54,9 @@ let age;
 mySumbit.onclick = function(){
 
 
+
+
+     
 age = myText.value;
 age = Number(age);
 
