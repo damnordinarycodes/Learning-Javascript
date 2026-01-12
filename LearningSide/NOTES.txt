@@ -338,3 +338,13 @@ console.log(randomnum);
 // }
 
 // }
+
+
+//HTML HTML HTML HTML 
+
+   <label>Enter Your Age :</label>
+    <input type="text" name="" id="myText"> <br>
+    <button type="button" id="mySumbit">Submit</button>
+    <p id="resultElement"></p>
+
+
