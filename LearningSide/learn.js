@@ -1,9 +1,24 @@
-// ternary operator in java script = a shortcut to if{} and else{} statements
-// helps to assign a variable based on a condition 
-// condition ? codeIfTrue : codeIfFalse;
+// switch = can be efficient way to make many else if statements
 
-let age = 21;
 
-let message = age>= 18 ? "You are an adult" : "you are minor";
+let day = ;
+switch(day){
+    case 1:
+            console.log("its monday");
+            break;
+        case 2: console.log("its tuesday");
+            break;
+        case 3: console.log("its wednesday");
+            break;
+        case 4: console.log("its thursday");
+            break;
+        case 5: console.log("its friday");
+            break;
+        case 6: console.log("its saturday");
+            break;
+        case 7: console.log("its sunday");
+            break;
+        default:
+            console.log($'{day is not a day)
 
-console.log(message);
+}
