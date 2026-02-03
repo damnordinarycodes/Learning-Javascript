@@ -348,3 +348,69 @@ console.log(randomnum);
     <p id="resultElement"></p>
 
 
+//checked - property that destermines the checkec state of an HTML checkbox or radio button element
+
+
+const mycheckbox = document.getElementById("mycheckbox")
+const visabtn = document.getElementById("visabtn")
+const mastercardbtn = document.getElementById("mastercardbtn")
+const paypalbtn = document.getElementById("paypalbtn")
+const mysumbit = document.getElementById("mysumbit")
+const subresult = document.getElementById("subresult")
+const paymentresult = document.getElementById("paymentresult")
+
+
+mysumbit.onclick = function(){
+    if(mycheckbox.checked){
+        subresult.textContent = 'you are subscribed'
+    }
+    else{
+                subresult.textContent = 'you are no subscribed'
+    }
+    if(visabtn.checked){
+        paymentresult.textContent = 'You are paying with visa';
+    }
+    else if(mastercardbtn.checked){
+                paymentresult.textContent = 'You are paying with mastercard';
+    }
+    else if(paypalbtn.checked){
+                paymentresult.textContent = 'You are paying with Paypal';
+    }
+    else{
+                paymentresult.textContent = 'You are paying with You must select a payment type';
+    }
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="mycheckbox">
+    <label for="mycheckbox">Subscribe</label><br>
+
+    <input type="radio" id="visabtn" name="card">
+    <label for="visabtn">Visa</label> <br>
+         
+    <input type="radio" id="mastercardbtn" name="card">
+    <label for="mastercardbtn">mastercard</label> <br>
+     
+    <input type="radio" id="paypalbtn" name="card">
+    <label for="paypalbtn">Paypal</label><br>
+     
+    <button type="button" id="mysumbit">SUMBIT</button>
+
+    <p id="subresult"> </p>
+    <p id="paymentresult"> </p>
+    <script src="learn.js"></script>
+</body>
+</html>
+
+
+
+
+
