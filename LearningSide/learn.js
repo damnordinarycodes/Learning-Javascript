@@ -4,5 +4,6 @@
 
 let age = 21;
 
-age>= 18 ? "You are an adult" : "you are minor";
+let message = age>= 18 ? "You are an adult" : "you are minor";
 
+console.log(message);
