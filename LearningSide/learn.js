@@ -1,17 +1,12 @@
-// // ASSIGNMENT OPERATOR 
-
-// // = assignment operator
-// // == comparison operator
-// // === stict equality operator (compare if values & datatypes are equal)
-// // != inequality operator  
-// // !== strict inequality operator
+// while loop - will repeat some code while some condition is true
 
 
-// const PI = 3.14;
+let username = " ";
 
-// if(PI !== "3.14"){
-//     console.log("that is pi")
-// }
-// else{
-//     console.log("That is not pi")
-// }
+while(username.trim() === ""){
+
+    console.log(`You didnt enter your name`);
+    username = prompt("Please enter your name: ");
+    if(username === null) break;
+}
+console.log(`Hello ${username}`);
