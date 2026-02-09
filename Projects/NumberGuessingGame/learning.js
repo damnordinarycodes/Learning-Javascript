@@ -61,7 +61,7 @@ function initUI(){
 }
 
 function newGame(){
-    answer = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
+    answer = Math.floor(Math.random() * (maxNum - minNum + 5)) + minNum;
     attempts = 0;
     feedback.textContent = '';
     attemptsEl.textContent = 'Attempts: 0';
