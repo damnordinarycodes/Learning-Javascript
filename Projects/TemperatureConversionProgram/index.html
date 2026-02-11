@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Temperature Converter</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        
+        <input type="number" id="textbox" class="input-box" value="0" placeholder="Enter temperature">
+        
+        <div class="radio-group">
+            <div class="radio-option">
+                <input type="radio" id="toFn" name="unit">
+                <label for="toFn">Celsius → Fahrenheit</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" id="toCl" name="unit">
+                <label for="toCl">Fahrenheit → Celsius</label>
+            </div>
+        </div>
+        
+        <button type="button" onclick="convert()" class="convert-btn">Convert</button>
+        <p id="result" class="result-text">Select a unit</p>
+    </div>
     
-
-
-
     <script src="index.js"></script>
 </body>
 </html>
